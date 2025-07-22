@@ -11,7 +11,52 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view ('about');
+
+        $siswa = [
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+             ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 1'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 2'],
+            ['nama' => 'Rahmad', 'kelas' => 'XI RPL 3'],
+           
+        ];
+
+        return view('about',
+         ['title' => 'About-Laravel',], compact('siswa') 
+
+        );
+    
     }
 
     /**

@@ -16,10 +16,24 @@
     </ul>
   </nav>
 
-  <section class="content">
-    <h1>ini ABOUT</h1>
-    <p>ini About nya pak.</p>
-  </section>
+<section class="content">
+  <h1>Ini Tablenya pak</h1>
+  <table>
+      <tr>
+        <th>Nama</th>
+        <th>Kelas</th>
+      </tr>
+
+      @foreach ($siswa as $s )
+        <tr>
+          <td>{{ $s['nama'] }}</td>
+          <td>{{ $s['kelas'] }}</td>
+        </tr>
+      @endforeach
+
+  </table>
+</section>
+
   
 </body>
 </html>
